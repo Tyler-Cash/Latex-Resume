@@ -1,0 +1,116 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Medium Length Professional CV
+% LaTeX Template
+% Version 2.0 (8/5/13)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Trey Hunner (http://www.treyhunner.com/)
+%
+% Important note:
+% This template requires the resume.cls file to be in the same directory as the
+% .tex file. The resume.cls file provides the resume style used for structuring the
+% document.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass{resume} % Use the custom resume.cls style
+
+\usepackage[left=0.75in,top=0.6in,right=0.75in,bottom=0.6in]{geometry} % Document margins
+
+\name{Tyler Cash} % Your name
+\address{0411~$\cdot$~319$\cdot$~513 \\ contact@tylercash.xyz} % Your phone number and email
+
+\begin{document}
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{Education}
+
+{\bf Macquarie University, NSW} \hfill {\em June 2018} \\ 
+B.Sc. major in Computing \\
+
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+%	WORK EXPERIENCE SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{Experience}
+
+\begin{rSubsection}{Propeller Aero}{November 2017 - Present}{Software Intern}{Surry Hills, NSW}
+\item Increased the companies revenue by implementing features which signed on new customers.
+\item Refactored large pre-existing systems into microservices that ran in Docker containers. 
+\item Deployed Docker images using Terraform and Kubernetes so that all infrastructure deployment was automated. 
+\item Improved test coverage so that the CI/CD system was more useful and informative. This allowed my team to find and correct bugs more quickly.
+\item Upgraded codebase from Python2 to Python3.
+\end{rSubsection}
+
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+%	PROJECTS SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{Personal Projects}
+
+\begin{rSubsection}{Rental Property Finder}{February 2017}{\href{https://github.com/Tyler-Cash/FindRentalHome}{\color{blue}{Github Repository}}}{}
+\item Scrapes a real estate website and stores each property in a house object representing the property.
+\item Calculates the distance between university and work.
+\item Based on constant given to program will find properties that are closer to work or university or somewhere inbetween the two.
+\item Skills: Python, BeautifulSoup, API, Google Maps API
+\end{rSubsection}
+
+%------------------------------------------------
+
+\begin{rSubsection}{FlowTow}{July 2016}{\href{https://github.com/Tyler-Cash/FlowTow}{\color{blue}{Github Repository}}}{}
+\item An SQLite3 backed bottle application which allows users to view, comment and rate content uploaded by verified users.
+\end{rSubsection}
+
+%------------------------------------------------
+
+\begin{rSubsection}{Homelab}{It never ends...}{}{}
+\item For fun I run my own server infrastructure using the Proxmox hypervisor.
+\item This currently runs my networks PFSense router, proxy for all of my sites.
+\item It used to host my Jira agile board. I also used it to implement CI/CD for a few projects. 
+\end{rSubsection}
+
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+%	TECHNICAL STRENGTHS SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{Technical Strengths}
+
+\begin{tabular}{ @{} >{\bfseries}l @{\hspace{6ex}} l }
+Languages (Strongest to weakest) & Python, Java, C\#, JavaScript, Scala, C/C++, XSLT \\
+Protocols \& APIs & XML, JSON \\
+Databases & MySQL, PostgreSQL, SQLite3 \\
+Skills & Machine Learning, CI/CD, Linux, Networking, Geodetics \\
+Tools & Git, SVN, Codeship, Terraform
+\end{tabular}
+
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+%	EXAMPLE SECTION
+%----------------------------------------------------------------------------------------
+
+%\begin{rSection}{Section Name}
+
+%Section content\ldots
+
+%\end{rSection}
+
+%----------------------------------------------------------------------------------------
+
+\end{document}
