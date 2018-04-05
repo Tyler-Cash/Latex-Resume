@@ -6,9 +6,9 @@ from github import Github
 DOCUMENT_NAME = 'resume'
 github_token = os.getenv('GITHUB_TOKEN')
 if github_token is None:
-    raise ValueError('Github token can\'t be None')
+    raise ValueError('GITHUB_TOKEN environment variable can\'t be None')
 
-github = Github(None)
+github = Github(github_token)
 
 
 def generate_pdf():

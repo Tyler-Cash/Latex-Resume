@@ -1,6 +1,7 @@
 FROM ubuntu
 
 RUN apt-get update && apt-get install -y texlive-latex-recommended python3
+RUN apt-get install -y python3-pip
 
 COPY . /app
 WORKDIR /app
