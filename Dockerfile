@@ -1,9 +1,10 @@
-FROM ubuntu
+FROM alpine
 
 ENV DEBIAN_FRONTEND=noninteractive
 ENV DEBCONF_NONINTERACTIVE_SEEN=true
-RUN apt-get update && apt-get install -y texlive-latex-recommended python3 texlive-latex-extra
-RUN apt-get install -y python3-pip
+RUN echo "http://dl-cdn.alpinelinux.org/alpine/v3.10/community" > "/etc/apk/repositories"
+RUN apk update && apk add texmf-dist texlive texlive-latex-recommended python3 texlive-latex-extra
+RUN apk add python3-pip
 
 COPY . /app
 WORKDIR /app
