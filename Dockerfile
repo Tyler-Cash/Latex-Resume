@@ -3,7 +3,7 @@ FROM alpine
 ENV DEBIAN_FRONTEND=noninteractive
 ENV DEBCONF_NONINTERACTIVE_SEEN=true
 RUN echo "http://dl-cdn.alpinelinux.org/alpine/v3.10/community" > "/etc/apk/repositories"
-RUN apk update && apk add texmf-dist texlive texlive-latex-recommended python3 texlive-latex-extra
+RUN apk update && apk add texlive python3
 RUN apk add python3-pip
 
 COPY . /app
