@@ -17,7 +17,7 @@ def generate_pdf():
 
 def release_pdf():
     cwd = os.path.abspath(os.getcwd())
-    resume_pdf_path = os.path.join(cwd, '{}.pdf'.format(DOCUMENT_NAME))
+    resume_pdf_path = os.path.join(cwd, 'Tyler Cash - Resume.pdf')
     repo = github.get_user().get_repo('Latex-Resume')
     latest_release = repo.get_latest_release()
 
