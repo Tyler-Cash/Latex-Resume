@@ -1,6 +1,7 @@
 import os
 import subprocess
 from github import Github
+import os
 
 
 DOCUMENT_NAME = 'resume'
@@ -17,7 +18,9 @@ def generate_pdf():
 
 def release_pdf():
     cwd = os.path.abspath(os.getcwd())
-    resume_pdf_path = os.path.join(cwd, '{}.pdf'.format(DOCUMENT_NAME))
+    src_path = os.path.join(cwd, 'resume.pdf')
+    dst_path = os.path.join(cwd, 'Tyler Cash.pdf')
+    os.rename(src_path, dst_path)
     repo = github.get_user().get_repo('Latex-Resume')
     latest_release = repo.get_latest_release()
 
@@ -25,7 +28,7 @@ def release_pdf():
     # Iterates subversion number by 1, e.g v1.0 will become v1.1
     tag = tag[:len(tag) - 1] + str(int(tag[len(tag) - 1]) + 1)
     new_release = repo.create_git_release(tag, 'Tyler Cash\'s resume', '')
-    new_release.upload_asset(resume_pdf_path, content_type='application/pdf')
+    new_release.upload_asset(dst_path, content_type='application/pdf')
 
 
 generate_pdf()
