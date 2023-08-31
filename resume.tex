@@ -33,38 +33,45 @@
 %----------------------------------------------------------------------------------------
 
 \begin{rSection}{Experience}
-    \begin{rSubsection}{Macquarie Group}{June 2018 - Present}{Junior Software Developer}{Sydney, NSW}
-    \item Develop Spring Boot APIs and deploy with infrastructure as code
-    \item Automate processes that cause developers issues (e.g. deployments)
-    \item Assist admins with automating manual processes for Hadoop platform
-    \item Design and implement new system integrations (e.g. Airflow to Cloudera Hadoop)
-    \item Mentor junior devs to help deliver features
+    \begin{rSubsection}{Macquarie Group}{June 2018 - August 2023}{Software Developer}{Sydney, NSW}
+    \item SME for all aspects of datasets on company wide datalake. Consulted frequently on AWS integrations, general software architecture, CI/CD processes, etc
+    \item Architected and developed API services (Java - Spring Boot) which configured datasets on company wide datalake with different configurations and formats.
+    \item Architected and developed API services (Java - Spring Boot) which authenticated users and provisioned AWS STS credentials with dynamic policies to their needed AWS components. (1 request per second)
+    \item Implemented bugfixes on regulatory message ingestion platform (Java - Spring Boot) which processed 10m~ messages per day in production.
+    \item Migrated EC2 services to Kubernetes deployed with ArgoCD, improved release time from 1h-2h to 5m~
+    \item Advocated and delivered initial CD process that all development teams used for 2+ years to deploy their workflows to the company wide datalake.
+    \item Mentor and support junior devs to help deliver features
     \end{rSubsection}
-    
-    \begin{rSubsection}{Macquarie University - Human Sciences IT}{March 2018 - June 2018}{Software Intern}{North Ryde, NSW}
-    \item Automated process saving the business 250 hours a month.
-    \item Wrote Javascript to integrate with preexisting service.
-    \end{rSubsection}
-    
+
     \begin{rSubsection}{Propeller Aero}{November 2017 - March 2018}{Software Intern}{Surry Hills, NSW}
-    \item Integrated Python microservices with GIS systems 
+    \item Integrated Python microservices with GIS systems (GPS, kinda)
+    \item Successfully migrated Python2 Django project to Python3
     \item Deployed Docker images using Terraform and Kubernetes.
     \item Improved test coverage and improved test runtime by 20\%
     \end{rSubsection}
     
     \end{rSection}
-    
+
+    %----------------------------------------------------------------------------------------
+    %	Personal Projects SECTION
+    %----------------------------------------------------------------------------------------
+
+    \begin{rSection}{Personal Projects}
+
+        \href{https://github.com/Tyler-Cash/homelab}{\color{blue}{\bf Homelab (10 stars)}} \hfill \\
+        At home I run a multi node K8S cluster with SSO, metrics, storage, ArgoCD, centralised logging, etc\\
+        I'm very proud of this platform which I use to run a few services for me and friends!\\
+        \end{rSection}
     %----------------------------------------------------------------------------------------
     %	EDUCATION SECTION
     %----------------------------------------------------------------------------------------
-    
+
     \begin{rSection}{Education}
-    
-        {\bf Macquarie University, NSW} \hfill {\em 2018} \\ 
+
+        {\bf Macquarie University, NSW} \hfill {\em 2018} \\
         B.Sc. major in Computing with a minor in Software Engineering and Software Technology\\
-        
+
         \end{rSection}
-    
     %----------------------------------------------------------------------------------------
     %	TECHNICAL STRENGTHS SECTION
     %----------------------------------------------------------------------------------------
@@ -72,9 +79,9 @@
     \begin{rSection}{Technical Strengths}
     
     \begin{tabular}{ @{} >{\bfseries}l @{\hspace{6ex}} l }
-    Languages & Java, Python, JavaScript \\
-    Databases & Hive, Impala, MySQL, PostgreSQL \\
-    Skills & Big data, CI/CD, Linux, Networking \\
+    Languages & Java, Python \\
+    Databases & Hive, Impala, Spark, Starburst  \\
+    Skills & Big data, CI/CD, Spring Boot, Docker, Containers, Kubernetes, Linux, Networking \\
     \end{tabular}
     \end{rSection}
     \end{document}
